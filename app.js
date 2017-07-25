@@ -1,3 +1,7 @@
+/**
+ * Created by yiyang1990 on 2017/7/25.
+ * 主进程启动代码
+**/
 const { app, BrowserWindow } = require('electron');
 
 // 保持一个对于 window 对象的全局引用，不然，当 JavaScript 被 GC，

@@ -4,8 +4,10 @@
   "description": "electron project",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify browser/js/app2.js -t babelify -o dist/bundle.js --debug --verbose"
+    "start": "C:/Users/asus/Desktop/electron-prebuilt/dist/electron.exe D:/myProject/FrameCaller",
+    "watch": "watchify browser/js/app2.js -t babelify -o dist/bundle.js --debug --verbose",
+    "build": "npm run start && npm run watch",
+    "package": "electron-packager D:/myProject/FrameCaller FrameCaller --all --out ./OutApp --version 1.4.0 --overwrite --icon=./app/img/icon/icon.ico"
   },
   "author": "yyang2@ewaytec.cn",
   "license": "MIT",
@@ -17,6 +19,7 @@
     "babel-preset-react": "^6.24.1",
     "babelify": "^7.3.0",
     "browserify": "^13.3.0",
+    "electron-packager": "^8.7.2",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-help": "^1.6.1",

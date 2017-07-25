@@ -1,5 +1,9 @@
 # FrameCaller
-a devTool desgined by electron for frontend work 
+a devTool designed by electron for frontend work
  
-# How to get start
-C:\Users\asus\Desktop\electron-prebuilt\dist\electron.exe D:\myProject\FrameCaller
+# How to get start
+shell: npm run build
+
+# How to package
+syntax: electron-packager <location of project> <name of project> <platform> <architecture> <electron version> <optional options>
+shell: npm run package
