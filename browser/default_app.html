@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World!</title>
+    <title>FrameCaller</title>
+    <meta charset="UTF-8">
+    <meta name="MobileOptimized" content="240" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style>
+       input{
+           width: 300px;
+       }
+    </style>
+
 </head>
 <body>
-<h1>Hello World!</h1>
 We are using io.js <script>document.write(process.version)</script>
 and Electron <script>document.write(process.versions['electron'])</script>.
+
+<div><label>项目目录地址：</label><input type="text" placeholder="请输入项目地址（dev层级）"></div>
+<div><label>服务器目录地址：</label><input type="text" placeholder="请输入服务器地址（plugins层级）"></div>
+
+<input type="button" value="开始上传" id="startUpload"/>
+<script src="../dist/bundle.js" type="text/javascript"></script>
 </body>
 </html>
